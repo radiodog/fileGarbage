@@ -1,0 +1,16 @@
+{
+    "name": "radiodog/fileGarbage",
+    "description": "fileGarbage",
+
+    "require": {
+        "slim/slim": "^3.1"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "fileGarbage\\": "src/"
+        }
+    }
+    
+
+}
