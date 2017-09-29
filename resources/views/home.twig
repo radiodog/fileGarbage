@@ -1,0 +1,22 @@
+{% extends 'templates/app.twig' %}
+{% block classForMenu %}
+	disabled
+{% endblock %}
+
+{% block content %}
+	<h4><small class="text-muted">Загрузка файла</small></h4>
+{% endblock %}
+
+{% block fileUploader %}
+	<form class="container-fluid row justify-content-center" method="post" enctype="multipart/form-data">
+  			<div class="row">
+    			<label class="custom-file">
+    				<input type="file" id="file" class="custom-file-input bg-info" name="uploadedFile">
+    				<span class="custom-file-control "></span>
+  				</label>
+    			<input class="btn btn-info" type=submit value=Загрузить style="margin-left:20px;">
+    			
+  			</div>
+  			
+		</form>
+{% endblock %}

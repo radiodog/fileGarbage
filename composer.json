@@ -3,12 +3,14 @@
     "description": "fileGarbage",
 
     "require": {
-        "slim/slim": "^3.1"
+        "slim/slim": "^3.1",
+        "slim/twig-view": "^2.3",
+        "illuminate/database": "5.4.x-dev"
     },
 
     "autoload": {
         "psr-4": {
-            "fileGarbage\\": "src/"
+            "App\\": "app/"
         }
     }
     

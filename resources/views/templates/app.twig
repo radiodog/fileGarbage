@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+	<div >
+		<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+  			<a class="navbar-brand" >Файлообменник на Slim 3</a>
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item ">
+        				<a class="nav-link {% block classForMenu %}{% endblock %}" href="http://localhost/index.php">Главная </a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#">Последние 100 файлов</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link " href="#">Disabled</a>
+      				</li>
+    			</ul>
+    			<form class="form-inline my-2 my-lg-0">
+      				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    			</form>
+  			</div>
+		</nav>
+	</div>
+	<div class="container-fluid row justify-content-center">
+		{% block content %}{% endblock %}
+	</div>
+	<div class="container-fluid row justify-content-center">
+		{% block fileUploader %}{% endblock %}
+	</div>	
+</body>
+</html>
+<footer class="navbar-bottom row-fluid text-left">
+    <div class="col-md-4">
+        <a href='http://localhost/index.php'>Главная</a>
+    </div>
+
+    <div class="col-md-4">
+        <a href='https://gist.github.com/codedokode/9424217'>Техническое задание</a>
+    </div>
+    
+    <div class="col-md-4 ">
+        <a href='https://github.com/radiodog/fileGarbage'>Git</a> проекта
+    </div>
+</footer>
